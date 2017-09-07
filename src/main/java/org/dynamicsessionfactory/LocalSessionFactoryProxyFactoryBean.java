@@ -9,7 +9,7 @@ public class LocalSessionFactoryProxyFactoryBean extends LocalSessionFactoryBean
 
     @Override public SessionFactoryProxy getObject() {
         if (this.product == null) {
-            this.product = new SessionFactoryProxy(super.getObject());
+            this.product = new SessionFactoryProxy(super.getObject(), super.getConfiguration());
         }
 
         return this.product;
