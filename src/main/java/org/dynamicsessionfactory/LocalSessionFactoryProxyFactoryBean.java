@@ -12,6 +12,7 @@ public class LocalSessionFactoryProxyFactoryBean extends LocalSessionFactoryBean
             this.product = new SessionFactoryProxy(super.getObject(), super.getConfiguration());
         }
 
+        HibernateConfigurationHolder.setConfiguration(getConfiguration());
         return this.product;
     }
 
