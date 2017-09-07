@@ -8,8 +8,11 @@ public class LocalSessionFactoryProxyFactoryBean extends LocalSessionFactoryBean
     private SessionFactoryProxy product;
 
     @Override public SessionFactoryProxy getObject() {
-        this.product = new SessionFactoryProxy(super.getObject());
-        return product;
+        if (this.product == null) {
+            this.product = new SessionFactoryProxy(super.getObject());
+        }
+
+        return this.product;
     }
 
     @Override public Class<?> getObjectType() {

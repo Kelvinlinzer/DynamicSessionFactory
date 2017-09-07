@@ -2,8 +2,6 @@ package dynamic.session.factory.context.listener;
 
 import dynamic.session.factory.SessionFactoryHolder;
 import org.hibernate.SessionFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 
@@ -11,8 +9,6 @@ import org.springframework.context.ApplicationListener;
  * Created by Kelvin.Li on 07/09/2017.
  */
 public class SessionFactoryChangeListener implements ApplicationListener {
-
-    private static final Logger logger = LoggerFactory.getLogger(SessionFactoryChangeListener.class);
 
     private SessionFactoryHolder sessionFactoryHolder;
 

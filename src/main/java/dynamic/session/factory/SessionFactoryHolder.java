@@ -1,11 +1,8 @@
 package dynamic.session.factory;
 
-import dynamic.session.factory.context.listener.SessionFactoryChangeListener;
 import dynamic.session.factory.proxy.SessionFactoryProxy;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -14,7 +11,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class SessionFactoryHolder {
 
-    private static final Logger logger = LoggerFactory.getLogger(SessionFactoryChangeListener.class);
 
     private SessionFactory newSessionFactory;
 
@@ -46,7 +42,6 @@ public class SessionFactoryHolder {
             try {
                 existingSessionFactory.close();
             } catch (HibernateException ex) {
-                logger.warn("Error happened during closing old SessionFactory!", ex);
                 throw ex;
             }
         }
