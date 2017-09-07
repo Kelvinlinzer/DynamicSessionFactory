@@ -1,4 +1,4 @@
-package dynamic.session.factory.proxy;
+package org.dynamicsessionfactory.proxy;
 
 import org.hibernate.*;
 import org.hibernate.engine.spi.FilterDefinition;

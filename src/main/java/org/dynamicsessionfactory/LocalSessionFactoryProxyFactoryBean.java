@@ -1,6 +1,6 @@
-package dynamic.session.factory;
+package org.dynamicsessionfactory;
 
-import dynamic.session.factory.proxy.SessionFactoryProxy;
+import org.dynamicsessionfactory.proxy.SessionFactoryProxy;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 
 public class LocalSessionFactoryProxyFactoryBean extends LocalSessionFactoryBean {

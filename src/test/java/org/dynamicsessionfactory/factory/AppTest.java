@@ -1,4 +1,4 @@
-package dynamic.session.factory;
+package org.dynamicsessionfactory.factory;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

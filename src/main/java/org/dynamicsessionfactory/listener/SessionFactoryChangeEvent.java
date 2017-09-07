@@ -1,4 +1,4 @@
-package dynamic.session.factory.context.listener;
+package org.dynamicsessionfactory.listener;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.ApplicationEvent;

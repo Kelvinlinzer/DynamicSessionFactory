@@ -1,6 +1,7 @@
-package dynamic.session.factory.context.listener;
+package org.dynamicsessionfactory.listener;
 
-import dynamic.session.factory.SessionFactoryHolder;
+
+import org.dynamicsessionfactory.SessionFactoryHolder;
 import org.hibernate.SessionFactory;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;

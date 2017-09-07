@@ -1,6 +1,6 @@
-package dynamic.session.factory;
+package org.dynamicsessionfactory;
 
-import dynamic.session.factory.proxy.SessionFactoryProxy;
+import org.dynamicsessionfactory.proxy.SessionFactoryProxy;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 
