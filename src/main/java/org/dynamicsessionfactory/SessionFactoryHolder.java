@@ -13,6 +13,9 @@ public class SessionFactoryHolder {
 
     private SessionFactoryProxy sessionFactoryProxy;
 
+    /**
+     * Make it thread-local, so that no race condition will happen.
+     */
     private static ThreadLocal<Boolean> sessionFactoryNeedsUpdate = new ThreadLocal<Boolean>();
 
     public boolean isSessionFactoryNeedsUpdate() {

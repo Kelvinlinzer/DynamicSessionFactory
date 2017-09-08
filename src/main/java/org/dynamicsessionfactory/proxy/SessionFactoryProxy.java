@@ -1,7 +1,6 @@
 package org.dynamicsessionfactory.proxy;
 
 import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
 import org.hibernate.engine.spi.FilterDefinition;
 import org.hibernate.metadata.ClassMetadata;
 import org.hibernate.metadata.CollectionMetadata;
@@ -21,17 +20,11 @@ public class SessionFactoryProxy implements SessionFactory {
 
     private SessionFactory target;
 
-    private Configuration configuration;
-
-    public SessionFactoryProxy(SessionFactory target, Configuration configuration) {
+    public SessionFactoryProxy(SessionFactory target) {
         if (target == null) {
             throw new HibernateException("Target SessionFactory is null!!!");
         }
         this.target = target;
-    }
-
-    public Configuration getConfiguration() {
-        return configuration;
     }
 
     public void set(SessionFactory target) {
