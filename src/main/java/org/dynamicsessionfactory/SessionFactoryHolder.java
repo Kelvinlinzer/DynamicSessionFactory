@@ -30,6 +30,10 @@ public class SessionFactoryHolder {
         this.newSessionFactory = newSessionFactory;
     }
 
+    public SessionFactoryProxy getSessionFactoryProxy() {
+        return sessionFactoryProxy;
+    }
+
     public void setSessionFactoryProxy(SessionFactoryProxy sessionFactoryProxy) {
         this.sessionFactoryProxy = sessionFactoryProxy;
     }

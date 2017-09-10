@@ -162,4 +162,15 @@ public class SessionFactoryProxy implements SessionFactory {
     @Override public int hashCode() {
         return this.target.hashCode();
     }
+
+    @Override public String toString() {
+        return this.target.toString();
+    }
+
+    @Override public boolean equals(Object o) {
+        if(this.target != null) {
+            return this.target.equals(o);
+        }
+        return false;
+    }
 }
